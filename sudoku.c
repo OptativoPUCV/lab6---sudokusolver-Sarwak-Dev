@@ -112,10 +112,8 @@ Node* DFS(Node* initial, int* cont) {
       for (Node* adj = first(adj_nodes); adj != NULL; adj = next(adj_nodes)) {
             push(stack, adj);
         }
-      free(stack);
-      free(adj_nodes);
       }
-   
+   free(stack);
    
   return NULL;
 }
